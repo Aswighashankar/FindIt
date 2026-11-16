@@ -1,9 +1,0 @@
-FindIt
-Home{% if session.get('user_id') %}DashboardReport itemLogout{% else %}LoginRegister{% endif %}
-{% with messages=get_flashed_messages() %}{% if messages %}
-{% for message in messages %}
-{{ message }}
-
-{% endfor %}
-{% endif %}{% endwith %}{% block content %}{% endblock %}
-FindIt · Student Lost & Found Prototype
